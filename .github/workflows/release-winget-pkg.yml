@@ -1,0 +1,26 @@
+name: Release WinGet package
+
+on: workflow_dispatch
+inputs:
+  identifier:
+    description: 'The package identifier'
+    required: true
+  repo:
+    description: 'The repository in the format: owner/name'
+    required: true
+  url:
+    description: 'Release URL'
+    required: true
+
+jobs:
+  update:
+    name: Release package
+    runs-on: ubuntu-latest
+    steps:
+    - name: Release package
+      uses: michidk/winget-updater@v1
+      with:
+        komac-token: ${{ secrets.KOMAC_TOKEN }}
+        identifier: ${{ inputs.identifier }}
+        repo: ${{ inputs.repo }}
+        url: ${{ inputs.url }}
