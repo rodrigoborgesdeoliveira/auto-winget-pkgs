@@ -1,16 +1,17 @@
 name: Release WinGet package
 
-on: workflow_dispatch
-inputs:
-  identifier:
-    description: 'The package identifier'
-    required: true
-  repo:
-    description: 'The repository in the format: owner/name'
-    required: true
-  url:
-    description: 'Release URL'
-    required: true
+on:
+  workflow_dispatch:
+    inputs:
+      identifier:
+        description: 'The package identifier'
+        required: true
+      repo:
+        description: 'The repository in the format: owner/name'
+        required: true
+      url:
+        description: 'Release URL'
+        required: true
 
 jobs:
   update:
