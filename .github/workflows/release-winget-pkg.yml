@@ -7,7 +7,7 @@ on:
         description: 'The package identifier'
         required: true
       repo:
-        description: 'The repository in the format: owner/name'
+        description: "The repository's path (owner/name)"
         required: true
       url:
         description: 'Release URL'
