@@ -17,6 +17,7 @@ jobs:
   update:
     name: Release package
     runs-on: ubuntu-latest
+
     steps:
     - name: Release package
       uses: michidk/winget-updater@v1
@@ -25,3 +26,13 @@ jobs:
         identifier: ${{ inputs.identifier }}
         repo: ${{ inputs.repo }}
         url: ${{ inputs.url }}
+
+  cleanup:
+    name: Clean up lingering branches
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clean up
+      uses: michidk/run-komac@v2
+      with:
+        args: 'cleanup --only-merged --token=${{ secrets.KOMAC_TOKEN }}'
