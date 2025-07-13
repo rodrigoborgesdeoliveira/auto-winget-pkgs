@@ -4,14 +4,21 @@ on:
   workflow_dispatch:
     inputs:
       identifier:
-        description: 'The package identifier'
+        description: "The package identifier"
+        type: string
         required: true
       repo:
         description: "The repository's path (owner/name)"
+        type: string
         required: true
       url:
-        description: 'Release URL'
+        description: "Release URL"
+        type: string
         required: true
+      version:
+        description: "Override the auto-detected version"
+        type: string
+        required: false
 
 jobs:
   update:
@@ -19,20 +26,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Release package
-      uses: michidk/winget-updater@v1
-      with:
-        komac-token: ${{ secrets.KOMAC_TOKEN }}
-        identifier: ${{ inputs.identifier }}
-        repo: ${{ inputs.repo }}
-        url: ${{ inputs.url }}
+      - name: Release package
+        uses: rodrigoborgesdeoliveira/winget-updater@v1
+        with:
+          komac-token: ${{ secrets.KOMAC_TOKEN }}
+          identifier: ${{ inputs.identifier }}
+          repo: ${{ inputs.repo }}
+          url: ${{ inputs.url }}
+          version: ${{ inputs.version }}
 
   cleanup:
     name: Clean up lingering branches
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clean up
-      uses: michidk/run-komac@v2
-      with:
-        args: 'cleanup --only-merged --token=${{ secrets.KOMAC_TOKEN }}'
+      - name: Clean up
+        uses: michidk/run-komac@v2
+        with:
+          args: "cleanup --only-merged --token=${{ secrets.KOMAC_TOKEN }}"
