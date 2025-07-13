@@ -10,11 +10,11 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -340,
-        -60
+        -60,
+        0
       ],
       "typeVersion": 1,
-      "id": "f2bcbaec-f470-4274-af76-6f47a24e3e40",
+      "id": "9968358a-1edf-4ddd-9383-0920478838c9",
       "name": "Sticky Note"
     },
     {
@@ -52,16 +52,16 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        20
+        260,
+        80
       ],
-      "id": "25e50c47-1f0a-407b-a989-bc68a80d0899",
+      "id": "fb70e93f-06b6-4f7f-835a-de499b588883",
       "name": "Release Bruno",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -80,10 +80,10 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        -240,
-        20
+        40,
+        80
       ],
-      "id": "21d0587c-0544-4528-b7e6-1b271691d26d",
+      "id": "15f373f7-bdc6-4575-830e-a2125748ba70",
       "name": "Bruno RSS feed"
     },
     {
@@ -100,10 +100,10 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        -240,
-        280
+        40,
+        340
       ],
-      "id": "5129bc50-2abc-408b-8003-0cd8f7d4be4a",
+      "id": "c8a3cb5e-9c1e-429c-8bf4-de73db2b506b",
       "name": "Draw.io RSS Feed"
     },
     {
@@ -141,34 +141,34 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        280
+        260,
+        340
       ],
-      "id": "f08c2b6e-fc08-428c-9650-d777b7408541",
+      "id": "91b8ccc9-8002-4529-b71c-b82635203df8",
       "name": "Release Draw.io",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
     },
     {
       "parameters": {
-        "content": "Draw.io",
+        "content": "DrawIO",
         "height": 220,
         "width": 540,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -350,
-        220
+        -70,
+        280
       ],
       "typeVersion": 1,
-      "id": "c3344e8d-642d-4e32-9f4a-eaa4075ac292",
+      "id": "a55d99d0-c955-4197-9894-70169bff9e30",
       "name": "Sticky Note1"
     },
     {
@@ -180,11 +180,11 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -350,
-        480
+        -70,
+        540
       ],
       "typeVersion": 1,
-      "id": "09043d8a-f4d9-4f0e-9989-070d446f7de7",
+      "id": "f46ba2e0-cc82-4355-81ed-43fc6d4b8e86",
       "name": "Sticky Note2"
     },
     {
@@ -201,10 +201,10 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        -240,
-        540
+        40,
+        600
       ],
-      "id": "4fe04b1f-0caa-4568-acd4-a56c2e7c9866",
+      "id": "354c9b11-b90c-4b8a-ae22-ff8ee4c83f31",
       "name": "Obsidian RSS Feed"
     },
     {
@@ -242,16 +242,16 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        540
+        260,
+        600
       ],
-      "id": "2fb09e86-6b8d-4794-bc20-a86a0fb411df",
+      "id": "7d3d70e0-5f59-4232-8110-0854b8eb7ac4",
       "name": "Release Obsidian",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -265,11 +265,11 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -350,
-        740
+        -70,
+        800
       ],
       "typeVersion": 1,
-      "id": "38599f91-cca2-434a-b7c4-f3a6f3d1936f",
+      "id": "d2577de2-e059-453f-8341-d92f7a32c099",
       "name": "Sticky Note3"
     },
     {
@@ -286,10 +286,10 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        -240,
-        1000
+        40,
+        1060
       ],
-      "id": "ee4cfab0-f3ef-4594-87d3-b155396aa9df",
+      "id": "52b2386f-10e3-485d-9201-1e85ea0e7d37",
       "name": "MongoDB Compass RSS Feed"
     },
     {
@@ -327,16 +327,16 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        800
+        260,
+        860
       ],
-      "id": "e90c0913-accb-4679-b75b-b263cc9e7c8b",
+      "id": "80123c35-b048-49c9-ad9e-e83392d162da",
       "name": "Release MongoDB Compass Full",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -376,16 +376,16 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        1000
+        260,
+        1060
       ],
-      "id": "e5aa4ac4-3e88-45ad-85a9-f9f9a2ca0693",
+      "id": "9230f9da-e4d2-4c92-adba-f0f3688e7dc3",
       "name": "Release MongoDB Compass Isolated",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -425,16 +425,16 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        1200
+        260,
+        1260
       ],
-      "id": "7c10a427-4ed2-4e66-8b36-382d7e7b1e9f",
+      "id": "a00aeae6-5f31-4aa0-a551-886a4534123f",
       "name": "Release MongoDB Compass Readonly",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -443,16 +443,16 @@
       "parameters": {
         "content": "Insomnia",
         "height": 440,
-        "width": 540,
+        "width": 1180,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -350,
-        1380
+        -60,
+        1440
       ],
       "typeVersion": 1,
-      "id": "5b40f5a5-85e2-4ceb-b120-6e8c0183ddb2",
+      "id": "9c7eb2e6-017b-478b-ae9d-0bb4ebb35b1d",
       "name": "Sticky Note4"
     },
     {
@@ -469,12 +469,11 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        -240,
-        1560
+        40,
+        1620
       ],
-      "id": "76f59bf6-fc03-4df6-806d-0525cf9bb664",
-      "name": "Insomnia RSS Feed",
-      "disabled": true
+      "id": "84b82ade-b970-465b-b842-b2233240601c",
+      "name": "Insomnia RSS Feed"
     },
     {
       "parameters": {
@@ -506,21 +505,21 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "{\n  \"identifier\": \"Insomnia.Insomnia\",\n  \"repo\": \"Kong/insomnia\",\n  \"url\": \"https://github.com/Kong/insomnia/releases/download/core@{VERSION}/Insomnia.Core-{VERSION}.exe\"\n}"
+        "inputs": "={\n  \"identifier\": \"Insomnia.Insomnia\",\n  \"repo\": \"Kong/insomnia\",\n  \"url\": \"https://github.com/Kong/insomnia/releases/download/core@{VERSION}/Insomnia.Core-{VERSION}.exe\",\n  \"version\": \"{{ $json.tag_name.split('@').last() }}\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        1460
+        920,
+        1520
       ],
-      "id": "f09af768-68c0-40ec-90df-cac41b200f43",
+      "id": "4a3811da-383c-40a9-9260-6c1dc7a5372a",
       "name": "Release Insomnia",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -555,21 +554,21 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "{\n  \"identifier\": \"Insomnia.Inso\",\n  \"repo\": \"Kong/insomnia\",\n  \"url\": \"https://github.com/Kong/insomnia/releases/download/lib@{VERSION}/inso-windows-{VERSION}.zip\"\n}"
+        "inputs": "={\n  \"identifier\": \"Insomnia.Inso\",\n  \"repo\": \"Kong/insomnia\",\n  \"url\": \"https://github.com/Kong/insomnia/releases/download/lib@{VERSION}/inso-windows-{VERSION}.zip\",\n  \"version\": \"{{ $json.tag_name.split('@').last() }}\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        1660
+        920,
+        1720
       ],
-      "id": "e8d9b35d-5e5f-42d1-9d25-6846ede88e05",
+      "id": "4648a658-04a9-4d2a-b442-f2e561b5adca",
       "name": "Release Inso",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -578,16 +577,16 @@
       "parameters": {
         "content": "Musescore",
         "height": 220,
-        "width": 540,
+        "width": 980,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -350,
-        1860
+        -70,
+        1920
       ],
       "typeVersion": 1,
-      "id": "0811ab24-2ebf-4a8f-b0d8-759f12542300",
+      "id": "fba9d0eb-66dc-44ef-95cd-e9cf4215d258",
       "name": "Sticky Note5"
     },
     {
@@ -604,12 +603,11 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        -240,
-        1920
+        40,
+        1980
       ],
-      "id": "48eaf5bc-9211-4b9a-b939-9efcbc48d93e",
-      "name": "Musescore RSS Feed",
-      "disabled": true
+      "id": "499a63e8-e126-4ebc-8fdb-578b0c5bda36",
+      "name": "Musescore RSS Feed"
     },
     {
       "parameters": {
@@ -641,21 +639,21 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "{\n  \"identifier\": \"Musescore.Musescore\",\n  \"repo\": \"musescore/MuseScore\",\n  \"url\": \"https://github.com/musescore/MuseScore/releases/download/v{VERSION}/MuseScore-Studio-{VERSION}-x86_64.msi\"\n}"
+        "inputs": "={\n  \"identifier\": \"Musescore.Musescore\",\n  \"repo\": \"musescore/MuseScore\",\n  \"url\": \"https://github.com/musescore/MuseScore/releases/download/{{ $json.tag_name }}/MuseScore-Studio-{VERSION}-x86_64.msi\",\n  \"version\": \"{{ $json.assets.find(asset => asset.name.endsWith('.msi'))?.name.match(/MuseScore-Studio-(.*)-x86_64\\.msi/)[1] }}\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        1920
+        700,
+        1980
       ],
-      "id": "29e16551-c618-4ee9-998b-62375c831624",
+      "id": "386d0279-d978-4a6f-8a6d-1bf71db67507",
       "name": "Release Musescore",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -669,11 +667,11 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -350,
-        2120
+        -70,
+        2180
       ],
       "typeVersion": 1,
-      "id": "e7db4e9f-1b0c-4e26-a61b-4c56467bc947",
+      "id": "b230feb8-c598-4904-838e-0b633a2b93fe",
       "name": "Sticky Note6"
     },
     {
@@ -690,10 +688,10 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        -240,
-        2180
+        40,
+        2240
       ],
-      "id": "c055c4af-ccd8-4f6e-a757-4cf9d306068e",
+      "id": "b0b62d8c-c149-41bc-9da9-74205a07661e",
       "name": "Stoplight Prism RSS Feed"
     },
     {
@@ -731,16 +729,16 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        2180
+        260,
+        2240
       ],
-      "id": "4312c76f-ed51-414d-a711-7a152c51e2d7",
+      "id": "d61d091a-ce35-49d3-bfaa-864417a78abc",
       "name": "Release Stoplight Prism",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -754,11 +752,11 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -350,
-        2380
+        -70,
+        2440
       ],
       "typeVersion": 1,
-      "id": "18b5b8c3-b37f-41c4-a4e0-cbaf1f32608a",
+      "id": "034c9f1c-46bf-4033-b031-d23b5230ce75",
       "name": "Sticky Note7"
     },
     {
@@ -775,10 +773,10 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        -240,
-        2440
+        40,
+        2500
       ],
-      "id": "c87346dd-5148-49d0-9f68-aecf699a4c3c",
+      "id": "03894fba-b10b-4f60-a645-ba41362d9d18",
       "name": "Stoplight Spectral RSS Feed"
     },
     {
@@ -816,16 +814,16 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        2440
+        260,
+        2500
       ],
-      "id": "9ddf6c41-7d7b-46f8-ae3b-8f42ad125c29",
+      "id": "35b1f5e3-4a6f-45e7-acb1-5a2400f54362",
       "name": "Release Stoplight Spectral",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
@@ -834,16 +832,16 @@
       "parameters": {
         "content": "Stoplight Studio",
         "height": 220,
-        "width": 540,
+        "width": 960,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -350,
-        2640
+        -60,
+        2700
       ],
       "typeVersion": 1,
-      "id": "ad16fa74-8d6a-46b4-b0ee-2a5ce03716ea",
+      "id": "2b15ddd0-b4cb-4099-90f5-38740efdaebb",
       "name": "Sticky Note8"
     },
     {
@@ -860,12 +858,11 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        -240,
-        2700
+        40,
+        2760
       ],
-      "id": "ee8a2e87-b5a2-44f5-bf38-25bf2b37b421",
-      "name": "Stoplight Studio RSS Feed",
-      "disabled": true
+      "id": "f3f26355-3e68-419d-b63a-9f33bf01810b",
+      "name": "Stoplight Studio RSS Feed"
     },
     {
       "parameters": {
@@ -897,33 +894,410 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "{\n  \"identifier\": \"Stoplight.Studio\",\n  \"repo\": \"stoplightio/studio\",\n  \"url\": \"https://github.com/stoplightio/studio/releases/download/v{VERSION}-stable.9587.git-0533c10/stoplight-studio-win.exe\"\n}"
+        "inputs": "={\n  \"identifier\": \"Stoplight.Studio\",\n  \"repo\": \"stoplightio/studio\",\n  \"url\": \"https://github.com/stoplightio/studio/releases/download/{{ $json.tag_name }}/stoplight-studio-win.exe\",\n  \"version\": \"{{ $json.tag_name.match(/v(.*)-stable/)[1] }}\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        2700
+        700,
+        2760
       ],
-      "id": "2fe19071-2577-4b37-9087-172fe3f34f2e",
+      "id": "1d6520b0-1401-452f-9fc5-12db020a9e9e",
       "name": "Release Stoplight Studio",
       "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
       "retryOnFail": true,
       "credentials": {
         "githubOAuth2Api": {
-          "id": "g1r6Kbi8kwWGrsvA",
+          "id": "AxtvUCvIL1uSAmcU",
           "name": "GitHub account"
         }
       }
+    },
+    {
+      "parameters": {
+        "content": "Adventure Game Studio",
+        "height": 220,
+        "width": 960,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -60,
+        2960
+      ],
+      "typeVersion": 1,
+      "id": "11b4259b-f5e6-480c-af2c-7589e3302e1a",
+      "name": "Sticky Note9"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/adventuregamestudio/ags/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        40,
+        3020
+      ],
+      "id": "5f4f28d6-86a5-4a0f-bfb1-894cbf2cae89",
+      "name": "Adventure Game Studio RSS Feed"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "={\n  \"identifier\": \"AGSProjectTeam.AdventureGameStudio\",\n  \"repo\": \"adventuregamestudio/ags\",\n  \"url\": \"{{ $json.assets.find(asset => asset.name.endsWith('.exe'))?.browser_download_url }}\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        700,
+        3020
+      ],
+      "id": "458aef04-cd6e-462a-8e2e-3a93358759ae",
+      "name": "Release Adventure Game Studio",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "AxtvUCvIL1uSAmcU",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://api.github.com/repos/musescore/MuseScore/releases/tags/{{ $json.id.split('/').last() }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        1980
+      ],
+      "id": "c4ad60f1-5872-477a-9368-95075ab5da66",
+      "name": "Get Musescore release"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.github.com/repos/Kong/insomnia/releases/tags/{{ $json.id.split('/').last() }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        1620
+      ],
+      "id": "59b2db6c-edf3-4adb-aace-3fc2ab20d330",
+      "name": "Get Insomnia release"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f8888717-1372-410e-9ee9-1c54e4be0247",
+              "leftValue": "={{ $json.prerelease }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "e6599eea-cb06-421c-82ad-0dda410ff12c",
+              "leftValue": "={{ $json.draft }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        1980
+      ],
+      "id": "387e64f1-6e76-4ba9-a5e2-dd1ecc866447",
+      "name": "If Musescore released"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "e1864dfc-e1d8-4271-80c9-e7c4a0822af1",
+              "leftValue": "={{ $json.prerelease }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "609c88a6-0911-459e-b659-1f6b4d1b1d21",
+              "leftValue": "={{ $json.draft }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        1620
+      ],
+      "id": "4325d9fc-e70b-4f32-9e79-e90116b3e2f8",
+      "name": "If Insomnia released"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.tag_name }}",
+                    "rightValue": "core@",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    },
+                    "id": "81ba5747-4725-49db-8532-989d9a1884ad"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Insomnia"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "98a0936e-45d2-4929-9a74-e8ac50a9d86c",
+                    "leftValue": "={{ $json.tag_name }}",
+                    "rightValue": "lib@",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Inso"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        700,
+        1620
+      ],
+      "id": "c36ee9cc-ed11-457d-8494-a0d6848c7d7f",
+      "name": "Insomnia or Inso?"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.github.com/repos/stoplightio/studio/releases/tags/{{ $json.id.split('/').last() }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        2760
+      ],
+      "id": "1fd862b1-5ff4-4aa9-af67-8d19754654f3",
+      "name": "Get Stoplight Studio release"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f8888717-1372-410e-9ee9-1c54e4be0247",
+              "leftValue": "={{ $json.prerelease }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "e6599eea-cb06-421c-82ad-0dda410ff12c",
+              "leftValue": "={{ $json.draft }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        2760
+      ],
+      "id": "61506e61-86f3-4854-ab7d-87e745c1e6ab",
+      "name": "If Stoplight Studio released"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.github.com/repos/adventuregamestudio/ags/releases/tags/{{ $json.id.split('/').last() }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        3020
+      ],
+      "id": "2bd007e4-53c2-42cb-b587-094b61d8186a",
+      "name": "Get AGS release"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f8888717-1372-410e-9ee9-1c54e4be0247",
+              "leftValue": "={{ $json.prerelease }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "e6599eea-cb06-421c-82ad-0dda410ff12c",
+              "leftValue": "={{ $json.draft }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        3020
+      ],
+      "id": "2c0f78d5-d9e4-45b6-bd45-cbddcd6c9a09",
+      "name": "If AGS released"
     }
   ],
   "pinData": {},
   "connections": {
-    "Release Bruno": {
-      "main": [
-        []
-      ]
-    },
     "Bruno RSS feed": {
       "main": [
         [
@@ -982,12 +1356,7 @@
       "main": [
         [
           {
-            "node": "Release Insomnia",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Release Inso",
+            "node": "Get Insomnia release",
             "type": "main",
             "index": 0
           }
@@ -998,7 +1367,7 @@
       "main": [
         [
           {
-            "node": "Release Musescore",
+            "node": "Get Musescore release",
             "type": "main",
             "index": 0
           }
@@ -1031,7 +1400,124 @@
       "main": [
         [
           {
+            "node": "Get Stoplight Studio release",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Adventure Game Studio RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Get AGS release",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Insomnia release": {
+      "main": [
+        [
+          {
+            "node": "If Insomnia released",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Musescore release": {
+      "main": [
+        [
+          {
+            "node": "If Musescore released",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If Insomnia released": {
+      "main": [
+        [
+          {
+            "node": "Insomnia or Inso?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insomnia or Inso?": {
+      "main": [
+        [
+          {
+            "node": "Release Insomnia",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Release Inso",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If Musescore released": {
+      "main": [
+        [
+          {
+            "node": "Release Musescore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Stoplight Studio release": {
+      "main": [
+        [
+          {
+            "node": "If Stoplight Studio released",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If Stoplight Studio released": {
+      "main": [
+        [
+          {
             "node": "Release Stoplight Studio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get AGS release": {
+      "main": [
+        [
+          {
+            "node": "If AGS released",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If AGS released": {
+      "main": [
+        [
+          {
+            "node": "Release Adventure Game Studio",
             "type": "main",
             "index": 0
           }
@@ -1043,11 +1529,11 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "e12aa2b6-dca7-4295-95eb-3df8a53f9b98",
+  "versionId": "a0f38803-424b-409b-af81-abafa4a6279a",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "f0942dc08177b8cdcd62c4dffd2c1246caa475a541b146a08c852ee7f8af694d"
+    "instanceId": "38effe97d9c69a307e3a2c0f9bf2e01678b117909ebda52281919e75b647e6fc"
   },
-  "id": "EhOEBETin1WGZPxW",
+  "id": "DWuXXCUp0kSG1YN0",
   "tags": []
 }
