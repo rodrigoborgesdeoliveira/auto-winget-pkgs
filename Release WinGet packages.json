@@ -1,0 +1,1053 @@
+{
+  "name": "Release WinGet packages",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "Bruno",
+        "height": 240,
+        "width": 520,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -340,
+        -60
+      ],
+      "typeVersion": 1,
+      "id": "f2bcbaec-f470-4274-af76-6f47a24e3e40",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"Bruno.Bruno\",\n  \"repo\": \"usebruno/bruno\",\n  \"url\": \"'https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_x64_win.zip https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_x64_win.exe'\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        20
+      ],
+      "id": "25e50c47-1f0a-407b-a989-bc68a80d0899",
+      "name": "Release Bruno",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/usebruno/bruno/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        20
+      ],
+      "id": "21d0587c-0544-4528-b7e6-1b271691d26d",
+      "name": "Bruno RSS feed"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/jgraph/drawio-desktop/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        280
+      ],
+      "id": "5129bc50-2abc-408b-8003-0cd8f7d4be4a",
+      "name": "Draw.io RSS Feed"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"JGraph.Draw\",\n  \"repo\": \"jgraph/drawio-desktop\",\n  \"url\": \"'https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-ia32-{VERSION}-windows-32bit-installer.exe https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-{VERSION}-windows-installer.exe https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-arm64-{VERSION}-windows-arm64-installer.exe https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-{VERSION}.msi'\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        280
+      ],
+      "id": "f08c2b6e-fc08-428c-9650-d777b7408541",
+      "name": "Release Draw.io",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "Draw.io",
+        "height": 220,
+        "width": 540,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -350,
+        220
+      ],
+      "typeVersion": 1,
+      "id": "c3344e8d-642d-4e32-9f4a-eaa4075ac292",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "Obsidian",
+        "height": 220,
+        "width": 540,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -350,
+        480
+      ],
+      "typeVersion": 1,
+      "id": "09043d8a-f4d9-4f0e-9989-070d446f7de7",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/obsidianmd/obsidian-releases/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        540
+      ],
+      "id": "4fe04b1f-0caa-4568-acd4-a56c2e7c9866",
+      "name": "Obsidian RSS Feed"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"Obsidian.Obsidian\",\n  \"repo\": \"obsidianmd/obsidian-releases\",\n  \"url\": \"https://github.com/obsidianmd/obsidian-releases/releases/download/v{VERSION}/Obsidian-{VERSION}.exe\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        540
+      ],
+      "id": "2fb09e86-6b8d-4794-bc20-a86a0fb411df",
+      "name": "Release Obsidian",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "MongoDB Compass",
+        "height": 620,
+        "width": 540,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -350,
+        740
+      ],
+      "typeVersion": 1,
+      "id": "38599f91-cca2-434a-b7c4-f3a6f3d1936f",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/mongodb-js/compass/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        1000
+      ],
+      "id": "ee4cfab0-f3ef-4594-87d3-b155396aa9df",
+      "name": "MongoDB Compass RSS Feed"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"MongoDB.Compass.Full\",\n  \"repo\": \"mongodb-js/compass\",\n  \"url\": \"https://github.com/mongodb-js/compass/releases/download/v{VERSION}/mongodb-compass-{VERSION}-win32-x64.msi\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        800
+      ],
+      "id": "e90c0913-accb-4679-b75b-b263cc9e7c8b",
+      "name": "Release MongoDB Compass Full",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"MongoDB.Compass.Isolated\",\n  \"repo\": \"mongodb-js/compass\",\n  \"url\": \"https://github.com/mongodb-js/compass/releases/download/v{VERSION}/mongodb-compass-isolated-{VERSION}-win32-x64.msi\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        1000
+      ],
+      "id": "e5aa4ac4-3e88-45ad-85a9-f9f9a2ca0693",
+      "name": "Release MongoDB Compass Isolated",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"MongoDB.Compass.Readonly\",\n  \"repo\": \"mongodb-js/compass\",\n  \"url\": \"https://github.com/mongodb-js/compass/releases/download/v{VERSION}/mongodb-compass-readonly-{VERSION}-win32-x64.msi\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        1200
+      ],
+      "id": "7c10a427-4ed2-4e66-8b36-382d7e7b1e9f",
+      "name": "Release MongoDB Compass Readonly",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "Insomnia",
+        "height": 440,
+        "width": 540,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -350,
+        1380
+      ],
+      "typeVersion": 1,
+      "id": "5b40f5a5-85e2-4ceb-b120-6e8c0183ddb2",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/Kong/insomnia/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        1560
+      ],
+      "id": "76f59bf6-fc03-4df6-806d-0525cf9bb664",
+      "name": "Insomnia RSS Feed",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"Insomnia.Insomnia\",\n  \"repo\": \"Kong/insomnia\",\n  \"url\": \"https://github.com/Kong/insomnia/releases/download/core@{VERSION}/Insomnia.Core-{VERSION}.exe\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        1460
+      ],
+      "id": "f09af768-68c0-40ec-90df-cac41b200f43",
+      "name": "Release Insomnia",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"Insomnia.Inso\",\n  \"repo\": \"Kong/insomnia\",\n  \"url\": \"https://github.com/Kong/insomnia/releases/download/lib@{VERSION}/inso-windows-{VERSION}.zip\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        1660
+      ],
+      "id": "e8d9b35d-5e5f-42d1-9d25-6846ede88e05",
+      "name": "Release Inso",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "Musescore",
+        "height": 220,
+        "width": 540,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -350,
+        1860
+      ],
+      "typeVersion": 1,
+      "id": "0811ab24-2ebf-4a8f-b0d8-759f12542300",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/musescore/MuseScore/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        1920
+      ],
+      "id": "48eaf5bc-9211-4b9a-b939-9efcbc48d93e",
+      "name": "Musescore RSS Feed",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"Musescore.Musescore\",\n  \"repo\": \"musescore/MuseScore\",\n  \"url\": \"https://github.com/musescore/MuseScore/releases/download/v{VERSION}/MuseScore-Studio-{VERSION}-x86_64.msi\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        1920
+      ],
+      "id": "29e16551-c618-4ee9-998b-62375c831624",
+      "name": "Release Musescore",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "Stoplight Prism",
+        "height": 220,
+        "width": 540,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -350,
+        2120
+      ],
+      "typeVersion": 1,
+      "id": "e7db4e9f-1b0c-4e26-a61b-4c56467bc947",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/stoplightio/prism/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        2180
+      ],
+      "id": "c055c4af-ccd8-4f6e-a757-4cf9d306068e",
+      "name": "Stoplight Prism RSS Feed"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"Stoplight.Prism\",\n  \"repo\": \"stoplightio/prism\",\n  \"url\": \"https://github.com/stoplightio/prism/releases/download/v{VERSION}/prism-cli-win.exe\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        2180
+      ],
+      "id": "4312c76f-ed51-414d-a711-7a152c51e2d7",
+      "name": "Release Stoplight Prism",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "Stoplight Spectral",
+        "height": 220,
+        "width": 540,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -350,
+        2380
+      ],
+      "typeVersion": 1,
+      "id": "18b5b8c3-b37f-41c4-a4e0-cbaf1f32608a",
+      "name": "Sticky Note7"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/stoplightio/spectral/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        2440
+      ],
+      "id": "c87346dd-5148-49d0-9f68-aecf699a4c3c",
+      "name": "Stoplight Spectral RSS Feed"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"Stoplight.Spectral\",\n  \"repo\": \"stoplightio/spectral\",\n  \"url\": \"https://github.com/stoplightio/spectral/releases/download/v{VERSION}/spectral.exe\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        2440
+      ],
+      "id": "9ddf6c41-7d7b-46f8-ae3b-8f42ad125c29",
+      "name": "Release Stoplight Spectral",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "Stoplight Studio",
+        "height": 220,
+        "width": 540,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -350,
+        2640
+      ],
+      "typeVersion": 1,
+      "id": "ad16fa74-8d6a-46b4-b0ee-2a5ce03716ea",
+      "name": "Sticky Note8"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/stoplightio/studio/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        2700
+      ],
+      "id": "ee8a2e87-b5a2-44f5-bf38-25bf2b37b421",
+      "name": "Stoplight Studio RSS Feed",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"Stoplight.Studio\",\n  \"repo\": \"stoplightio/studio\",\n  \"url\": \"https://github.com/stoplightio/studio/releases/download/v{VERSION}-stable.9587.git-0533c10/stoplight-studio-win.exe\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        2700
+      ],
+      "id": "2fe19071-2577-4b37-9087-172fe3f34f2e",
+      "name": "Release Stoplight Studio",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "g1r6Kbi8kwWGrsvA",
+          "name": "GitHub account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Release Bruno": {
+      "main": [
+        []
+      ]
+    },
+    "Bruno RSS feed": {
+      "main": [
+        [
+          {
+            "node": "Release Bruno",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Draw.io RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Release Draw.io",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Obsidian RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Release Obsidian",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MongoDB Compass RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Release MongoDB Compass Full",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Release MongoDB Compass Isolated",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Release MongoDB Compass Readonly",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insomnia RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Release Insomnia",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Release Inso",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Musescore RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Release Musescore",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Stoplight Prism RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Release Stoplight Prism",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Stoplight Spectral RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Release Stoplight Spectral",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Stoplight Studio RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Release Stoplight Studio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e12aa2b6-dca7-4295-95eb-3df8a53f9b98",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f0942dc08177b8cdcd62c4dffd2c1246caa475a541b146a08c852ee7f8af694d"
+  },
+  "id": "EhOEBETin1WGZPxW",
+  "tags": []
+}
