@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Release package
-        uses: rodrigoborgesdeoliveira/winget-updater@v1
+        uses: rodrigoborgesdeoliveira/winget-updater@v1.2.0
         with:
           komac-token: ${{ secrets.KOMAC_TOKEN }}
           identifier: ${{ inputs.identifier }}
