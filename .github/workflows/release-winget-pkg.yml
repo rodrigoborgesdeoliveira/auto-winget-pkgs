@@ -29,6 +29,7 @@ jobs:
       - name: Release package
         uses: rodrigoborgesdeoliveira/winget-updater@v1.2.0
         with:
+          komav-version: 'latest'
           komac-token: ${{ secrets.KOMAC_TOKEN }}
           identifier: ${{ inputs.identifier }}
           repo: ${{ inputs.repo }}
