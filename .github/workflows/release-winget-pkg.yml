@@ -21,15 +21,26 @@ on:
         required: false
 
 jobs:
+  sync:
+    name: Sync fork
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync
+        uses: michidk/run-komac@v2
+        with:
+          args: "sync --token=${{ secrets.KOMAC_TOKEN }}"
+
   update:
     name: Release package
     runs-on: ubuntu-latest
+    needs: sync
 
     steps:
       - name: Release package
         uses: rodrigoborgesdeoliveira/winget-updater@v1.2.0
         with:
-          komac-version: 'latest'
+          komac-version: "latest"
           komac-token: ${{ secrets.KOMAC_TOKEN }}
           identifier: ${{ inputs.identifier }}
           repo: ${{ inputs.repo }}
