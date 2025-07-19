@@ -1294,6 +1294,91 @@
       ],
       "id": "2c0f78d5-d9e4-45b6-bd45-cbddcd6c9a09",
       "name": "If AGS released"
+    },
+    {
+      "parameters": {
+        "content": "Rio Terminal",
+        "height": 220,
+        "width": 540,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -60,
+        3240
+      ],
+      "typeVersion": 1,
+      "id": "d2c97e16-f99e-41eb-82ad-a4c268280c3c",
+      "name": "Sticky Note10"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "workflow",
+        "owner": {
+          "__rl": true,
+          "value": "rodrigoborgesdeoliveira",
+          "mode": "list",
+          "cachedResultName": "rodrigoborgesdeoliveira",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "auto-winget-pkgs",
+          "mode": "list",
+          "cachedResultName": "auto-winget-pkgs",
+          "cachedResultUrl": "https://github.com/rodrigoborgesdeoliveira/auto-winget-pkgs"
+        },
+        "workflowId": {
+          "__rl": true,
+          "value": 174257108,
+          "mode": "list",
+          "cachedResultName": "Release WinGet package"
+        },
+        "ref": {
+          "__rl": true,
+          "value": "main",
+          "mode": "list",
+          "cachedResultName": "main"
+        },
+        "inputs": "{\n  \"identifier\": \"raphamorim.rio\",\n  \"repo\": \"raphamorim/rio\",\n  \"url\": \"'https://github.com/raphamorim/rio/releases/download/v{VERSION}/Rio-installer-x86_64.msi https://github.com/raphamorim/rio/releases/download/v{VERSION}/Rio-installer-aarch64.msi'\"\n}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        280,
+        3300
+      ],
+      "id": "10f6c9d5-e1be-4818-9b46-f8f861f650f1",
+      "name": "Release Rio Terminal",
+      "webhookId": "1bf340ab-760c-45f6-92c5-f3f9fac3b1ed",
+      "retryOnFail": true,
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "AxtvUCvIL1uSAmcU",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "feedUrl": "https://github.com/raphamorim/rio/releases.atom"
+      },
+      "type": "n8n-nodes-base.rssFeedReadTrigger",
+      "typeVersion": 1,
+      "position": [
+        60,
+        3300
+      ],
+      "id": "c537b679-fc84-43cb-a67a-8bca31b15f7c",
+      "name": "Rio Terminal RSS Feed"
     }
   ],
   "pinData": {},
@@ -1523,13 +1608,24 @@
           }
         ]
       ]
+    },
+    "Rio Terminal RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Release Rio Terminal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": true,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "a0f38803-424b-409b-af81-abafa4a6279a",
+  "versionId": "11b1b8e3-b359-48bf-85f6-0ef40c509574",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "38effe97d9c69a307e3a2c0f9bf2e01678b117909ebda52281919e75b647e6fc"
