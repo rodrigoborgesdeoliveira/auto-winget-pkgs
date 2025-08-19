@@ -260,7 +260,7 @@
       "parameters": {
         "content": "MongoDB Compass",
         "height": 620,
-        "width": 540,
+        "width": 1180,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
@@ -322,13 +322,13 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "{\n  \"identifier\": \"MongoDB.Compass.Full\",\n  \"repo\": \"mongodb-js/compass\",\n  \"url\": \"https://github.com/mongodb-js/compass/releases/download/v{VERSION}/mongodb-compass-{VERSION}-win32-x64.msi\"\n}"
+        "inputs": "={\n  \"identifier\": \"MongoDB.Compass.Full\",\n  \"repo\": \"mongodb-js/compass\",\n  \"url\": \"https://github.com/mongodb-js/compass/releases/download/{{ $json.tag_name }}/mongodb-compass-{{ $json.name }}-win32-x64.msi\",\n  \"version\": \"{{ $json.name }}.0\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        260,
-        860
+        880,
+        840
       ],
       "id": "80123c35-b048-49c9-ad9e-e83392d162da",
       "name": "Release MongoDB Compass Full",
@@ -371,13 +371,13 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "{\n  \"identifier\": \"MongoDB.Compass.Isolated\",\n  \"repo\": \"mongodb-js/compass\",\n  \"url\": \"https://github.com/mongodb-js/compass/releases/download/v{VERSION}/mongodb-compass-isolated-{VERSION}-win32-x64.msi\"\n}"
+        "inputs": "={\n  \"identifier\": \"MongoDB.Compass.Isolated\",\n  \"repo\": \"mongodb-js/compass\",\n  \"url\": \"https://github.com/mongodb-js/compass/releases/download/{{ $json.tag_name }}/mongodb-compass-isolated-{{ $json.name }}-win32-x64.msi\",\n  \"version\": \"{{ $json.name }}.0\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        260,
-        1060
+        880,
+        1040
       ],
       "id": "9230f9da-e4d2-4c92-adba-f0f3688e7dc3",
       "name": "Release MongoDB Compass Isolated",
@@ -420,13 +420,13 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "{\n  \"identifier\": \"MongoDB.Compass.Readonly\",\n  \"repo\": \"mongodb-js/compass\",\n  \"url\": \"https://github.com/mongodb-js/compass/releases/download/v{VERSION}/mongodb-compass-readonly-{VERSION}-win32-x64.msi\"\n}"
+        "inputs": "={\n  \"identifier\": \"MongoDB.Compass.Readonly\",\n  \"repo\": \"mongodb-js/compass\",\n  \"url\": \"https://github.com/mongodb-js/compass/releases/download/{{ $json.tag_name }}/mongodb-compass-readonly-{{ $json.name }}-win32-x64.msi\",\n  \"version\": \"{{ $json.name }}.0\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        260,
-        1260
+        880,
+        1240
       ],
       "id": "a00aeae6-5f31-4aa0-a551-886a4534123f",
       "name": "Release MongoDB Compass Readonly",
@@ -1379,9 +1379,82 @@
       ],
       "id": "c537b679-fc84-43cb-a67a-8bca31b15f7c",
       "name": "Rio Terminal RSS Feed"
+    },
+    {
+      "parameters": {
+        "url": "=https://api.github.com/repos/mongodb-js/compass/releases/tags/{{ $json.id.split('/').last() }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        1060
+      ],
+      "id": "8d0b64f9-1aa2-4d5c-83a3-e3d0b7e83d4c",
+      "name": "Get MongoDB Compass release"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f8888717-1372-410e-9ee9-1c54e4be0247",
+              "leftValue": "={{ $json.prerelease }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "e6599eea-cb06-421c-82ad-0dda410ff12c",
+              "leftValue": "={{ $json.draft }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        1060
+      ],
+      "id": "6a507939-d509-4241-a230-175deea6064d",
+      "name": "If MongoDB Compass released"
     }
   ],
-  "pinData": {},
+  "pinData": {
+    "MongoDB Compass RSS Feed": [
+      {
+        "json": {
+          "title": "v1.46.8",
+          "link": "https://github.com/mongodb-js/compass/releases/tag/v1.46.8",
+          "pubDate": "2025-08-19T14:43:47.000Z",
+          "author": "github-actions[bot]",
+          "content": "<p>v1.46.8</p>",
+          "contentSnippet": "v1.46.7",
+          "id": "tag:github.com,2008:Repository/31547508/v1.46.7",
+          "isoDate": "2025-08-19T14:43:47.000Z"
+        }
+      }
+    ]
+  },
   "connections": {
     "Bruno RSS feed": {
       "main": [
@@ -1420,17 +1493,7 @@
       "main": [
         [
           {
-            "node": "Release MongoDB Compass Full",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Release MongoDB Compass Isolated",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Release MongoDB Compass Readonly",
+            "node": "Get MongoDB Compass release",
             "type": "main",
             "index": 0
           }
@@ -1619,13 +1682,45 @@
           }
         ]
       ]
+    },
+    "Get MongoDB Compass release": {
+      "main": [
+        [
+          {
+            "node": "If MongoDB Compass released",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If MongoDB Compass released": {
+      "main": [
+        [
+          {
+            "node": "Release MongoDB Compass Full",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Release MongoDB Compass Isolated",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Release MongoDB Compass Readonly",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": true,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "11b1b8e3-b359-48bf-85f6-0ef40c509574",
+  "versionId": "5392d57c-3820-4885-a169-8290a6614f09",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "38effe97d9c69a307e3a2c0f9bf2e01678b117909ebda52281919e75b647e6fc"
