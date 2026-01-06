@@ -10,7 +10,7 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -60,
+        -64,
         0
       ],
       "typeVersion": 1,
@@ -52,7 +52,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        260,
+        272,
         80
       ],
       "id": "fb70e93f-06b6-4f7f-835a-de499b588883",
@@ -80,7 +80,7 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
+        48,
         80
       ],
       "id": "15f373f7-bdc6-4575-830e-a2125748ba70",
@@ -100,8 +100,8 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
-        340
+        48,
+        352
       ],
       "id": "c8a3cb5e-9c1e-429c-8bf4-de73db2b506b",
       "name": "Draw.io RSS Feed"
@@ -141,8 +141,8 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        260,
-        340
+        272,
+        352
       ],
       "id": "91b8ccc9-8002-4529-b71c-b82635203df8",
       "name": "Release Draw.io",
@@ -164,8 +164,8 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -70,
-        280
+        -64,
+        288
       ],
       "typeVersion": 1,
       "id": "a55d99d0-c955-4197-9894-70169bff9e30",
@@ -180,8 +180,8 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -70,
-        540
+        -64,
+        544
       ],
       "typeVersion": 1,
       "id": "f46ba2e0-cc82-4355-81ed-43fc6d4b8e86",
@@ -201,8 +201,8 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
-        600
+        48,
+        608
       ],
       "id": "354c9b11-b90c-4b8a-ae22-ff8ee4c83f31",
       "name": "Obsidian RSS Feed"
@@ -242,8 +242,8 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        260,
-        600
+        272,
+        608
       ],
       "id": "7d3d70e0-5f59-4232-8110-0854b8eb7ac4",
       "name": "Release Obsidian",
@@ -265,7 +265,7 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -70,
+        -64,
         800
       ],
       "typeVersion": 1,
@@ -286,8 +286,8 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
-        1060
+        48,
+        1072
       ],
       "id": "52b2386f-10e3-485d-9201-1e85ea0e7d37",
       "name": "MongoDB Compass RSS Feed"
@@ -328,7 +328,7 @@
       "typeVersion": 1.1,
       "position": [
         880,
-        840
+        848
       ],
       "id": "80123c35-b048-49c9-ad9e-e83392d162da",
       "name": "Release MongoDB Compass Full",
@@ -426,7 +426,7 @@
       "typeVersion": 1.1,
       "position": [
         880,
-        1240
+        1248
       ],
       "id": "a00aeae6-5f31-4aa0-a551-886a4534123f",
       "name": "Release MongoDB Compass Readonly",
@@ -448,7 +448,7 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -60,
+        -64,
         1440
       ],
       "typeVersion": 1,
@@ -469,8 +469,8 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
-        1620
+        48,
+        1632
       ],
       "id": "84b82ade-b970-465b-b842-b2233240601c",
       "name": "Insomnia RSS Feed"
@@ -510,7 +510,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        920,
+        928,
         1520
       ],
       "id": "4a3811da-383c-40a9-9260-6c1dc7a5372a",
@@ -559,8 +559,8 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        920,
-        1720
+        928,
+        1728
       ],
       "id": "4648a658-04a9-4d2a-b442-f2e561b5adca",
       "name": "Release Inso",
@@ -582,7 +582,7 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -70,
+        -64,
         1920
       ],
       "typeVersion": 1,
@@ -603,8 +603,8 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
-        1980
+        48,
+        1984
       ],
       "id": "499a63e8-e126-4ebc-8fdb-578b0c5bda36",
       "name": "Musescore RSS Feed"
@@ -644,8 +644,8 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        700,
-        1980
+        704,
+        1984
       ],
       "id": "386d0279-d978-4a6f-8a6d-1bf71db67507",
       "name": "Release Musescore",
@@ -667,8 +667,8 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -70,
-        2180
+        -64,
+        2192
       ],
       "typeVersion": 1,
       "id": "b230feb8-c598-4904-838e-0b633a2b93fe",
@@ -688,7 +688,7 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
+        48,
         2240
       ],
       "id": "b0b62d8c-c149-41bc-9da9-74205a07661e",
@@ -729,7 +729,7 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        260,
+        272,
         2240
       ],
       "id": "d61d091a-ce35-49d3-bfaa-864417a78abc",
@@ -752,8 +752,8 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -70,
-        2440
+        -64,
+        2448
       ],
       "typeVersion": 1,
       "id": "034c9f1c-46bf-4033-b031-d23b5230ce75",
@@ -773,8 +773,8 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
-        2500
+        48,
+        2512
       ],
       "id": "03894fba-b10b-4f60-a645-ba41362d9d18",
       "name": "Stoplight Spectral RSS Feed"
@@ -814,8 +814,8 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        260,
-        2500
+        272,
+        2512
       ],
       "id": "35b1f5e3-4a6f-45e7-acb1-5a2400f54362",
       "name": "Release Stoplight Spectral",
@@ -837,8 +837,8 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -60,
-        2700
+        -64,
+        2704
       ],
       "typeVersion": 1,
       "id": "2b15ddd0-b4cb-4099-90f5-38740efdaebb",
@@ -858,8 +858,8 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
-        2760
+        48,
+        2768
       ],
       "id": "f3f26355-3e68-419d-b63a-9f33bf01810b",
       "name": "Stoplight Studio RSS Feed"
@@ -899,8 +899,8 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        700,
-        2760
+        704,
+        2768
       ],
       "id": "1d6520b0-1401-452f-9fc5-12db020a9e9e",
       "name": "Release Stoplight Studio",
@@ -922,7 +922,7 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -60,
+        -64,
         2960
       ],
       "typeVersion": 1,
@@ -943,8 +943,8 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        40,
-        3020
+        48,
+        3024
       ],
       "id": "5f4f28d6-86a5-4a0f-bfb1-894cbf2cae89",
       "name": "Adventure Game Studio RSS Feed"
@@ -979,13 +979,13 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "={\n  \"identifier\": \"AGSProjectTeam.AdventureGameStudio\",\n  \"repo\": \"adventuregamestudio/ags\",\n  \"url\": \"{{ $json.assets.find(asset => asset.name.endsWith('.exe'))?.browser_download_url }}\"\n}"
+        "inputs": "={\n  \"identifier\": \"AGSProjectTeam.AdventureGameStudio\",\n  \"repo\": \"adventuregamestudio/ags\",\n  \"url\": \"{{ $json.assets.find(asset => asset.name.endsWith('.exe'))?.browser_download_url }}\",\n  \"version\": \"{{ $json.tag_name.split('v')[1] }}\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        700,
-        3020
+        704,
+        3024
       ],
       "id": "458aef04-cd6e-462a-8e2e-3a93358759ae",
       "name": "Release Adventure Game Studio",
@@ -1006,8 +1006,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        260,
-        1980
+        272,
+        1984
       ],
       "id": "c4ad60f1-5872-477a-9368-95075ab5da66",
       "name": "Get Musescore release"
@@ -1020,8 +1020,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        260,
-        1620
+        272,
+        1632
       ],
       "id": "59b2db6c-edf3-4adb-aace-3fc2ab20d330",
       "name": "Get Insomnia release"
@@ -1065,7 +1065,7 @@
       "typeVersion": 2.2,
       "position": [
         480,
-        1980
+        1984
       ],
       "id": "387e64f1-6e76-4ba9-a5e2-dd1ecc866447",
       "name": "If Musescore released"
@@ -1109,7 +1109,7 @@
       "typeVersion": 2.2,
       "position": [
         480,
-        1620
+        1632
       ],
       "id": "4325d9fc-e70b-4f32-9e79-e90116b3e2f8",
       "name": "If Insomnia released"
@@ -1173,8 +1173,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        700,
-        1620
+        704,
+        1632
       ],
       "id": "c36ee9cc-ed11-457d-8494-a0d6848c7d7f",
       "name": "Insomnia or Inso?"
@@ -1187,8 +1187,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        260,
-        2760
+        272,
+        2768
       ],
       "id": "1fd862b1-5ff4-4aa9-af67-8d19754654f3",
       "name": "Get Stoplight Studio release"
@@ -1232,7 +1232,7 @@
       "typeVersion": 2.2,
       "position": [
         480,
-        2760
+        2768
       ],
       "id": "61506e61-86f3-4854-ab7d-87e745c1e6ab",
       "name": "If Stoplight Studio released"
@@ -1245,8 +1245,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        260,
-        3020
+        272,
+        3024
       ],
       "id": "2bd007e4-53c2-42cb-b587-094b61d8186a",
       "name": "Get AGS release"
@@ -1290,7 +1290,7 @@
       "typeVersion": 2.2,
       "position": [
         480,
-        3020
+        3024
       ],
       "id": "2c0f78d5-d9e4-45b6-bd45-cbddcd6c9a09",
       "name": "If AGS released"
@@ -1304,8 +1304,8 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        -60,
-        3240
+        -64,
+        3248
       ],
       "typeVersion": 1,
       "id": "d2c97e16-f99e-41eb-82ad-a4c268280c3c",
@@ -1346,8 +1346,8 @@
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
       "position": [
-        280,
-        3300
+        288,
+        3312
       ],
       "id": "10f6c9d5-e1be-4818-9b46-f8f861f650f1",
       "name": "Release Rio Terminal",
@@ -1374,8 +1374,8 @@
       "type": "n8n-nodes-base.rssFeedReadTrigger",
       "typeVersion": 1,
       "position": [
-        60,
-        3300
+        64,
+        3312
       ],
       "id": "c537b679-fc84-43cb-a67a-8bca31b15f7c",
       "name": "Rio Terminal RSS Feed"
@@ -1388,8 +1388,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        260,
-        1060
+        272,
+        1072
       ],
       "id": "8d0b64f9-1aa2-4d5c-83a3-e3d0b7e83d4c",
       "name": "Get MongoDB Compass release"
@@ -1433,7 +1433,7 @@
       "typeVersion": 2.2,
       "position": [
         480,
-        1060
+        1072
       ],
       "id": "6a507939-d509-4241-a230-175deea6064d",
       "name": "If MongoDB Compass released"
@@ -1720,7 +1720,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "5392d57c-3820-4885-a169-8290a6614f09",
+  "versionId": "2d38ad00-7cae-472c-b3a0-86b8349737ee",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "38effe97d9c69a307e3a2c0f9bf2e01678b117909ebda52281919e75b647e6fc"
