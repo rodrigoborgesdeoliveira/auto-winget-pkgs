@@ -47,7 +47,7 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "{\n  \"identifier\": \"Bruno.Bruno\",\n  \"repo\": \"usebruno/bruno\",\n  \"url\": \"'https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_x64_win.zip https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_x64_win.exe'\"\n}"
+        "inputs": "{\n  \"identifier\": \"Bruno.Bruno\",\n  \"repo\": \"usebruno/bruno\",\n  \"url\": \"'https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_arm64_win.exe https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_arm64_win.msi https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_arm64_win.zip https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_x64_win.exe https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_x64_win.msi https://github.com/usebruno/bruno/releases/download/v{VERSION}/bruno_{VERSION}_x64_win.zip'\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
@@ -1720,7 +1720,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "2d38ad00-7cae-472c-b3a0-86b8349737ee",
+  "versionId": "7bffb6d1-a2ea-4d6e-b69c-8011bece5fe9",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "38effe97d9c69a307e3a2c0f9bf2e01678b117909ebda52281919e75b647e6fc"
