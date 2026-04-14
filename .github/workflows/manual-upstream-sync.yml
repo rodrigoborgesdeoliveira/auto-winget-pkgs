@@ -1,0 +1,15 @@
+name: Manual upstream sync
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: Sync fork
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync
+        run: gh repo sync ${{ vars.WINGET_PKGS_FORK }}
+        env:
+          GH_TOKEN: ${{ secrets.KOMAC_TOKEN }}
