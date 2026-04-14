@@ -27,9 +27,9 @@ jobs:
 
     steps:
       - name: Sync
-        uses: michidk/run-komac@v2
-        with:
-          args: "sync --token=${{ secrets.KOMAC_TOKEN }}"
+        run: gh repo sync ${{ vars.WINGET_PKGS_FORK }}
+        env:
+          GH_TOKEN: ${{ secrets.KOMAC_TOKEN }}
 
   update:
     name: Release package
