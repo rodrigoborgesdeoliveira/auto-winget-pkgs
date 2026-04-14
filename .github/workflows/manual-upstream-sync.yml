@@ -10,6 +10,6 @@ jobs:
 
     steps:
       - name: Sync
-        run: gh repo sync ${{ vars.MY_WINGET_PKGS_REPO }}
+        run: gh repo sync ${{ vars.WINGET_PKGS_FORK }}
         env:
           GH_TOKEN: ${{ secrets.KOMAC_TOKEN }}
