@@ -136,7 +136,7 @@
           "mode": "list",
           "cachedResultName": "main"
         },
-        "inputs": "{\n  \"identifier\": \"JGraph.Draw\",\n  \"repo\": \"jgraph/drawio-desktop\",\n  \"url\": \"'https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-ia32-{VERSION}-windows-32bit-installer.exe https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-{VERSION}-windows-installer.exe https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-arm64-{VERSION}-windows-arm64-installer.exe https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-{VERSION}.msi'\"\n}"
+        "inputs": "{\n  \"identifier\": \"JGraph.Draw\",\n  \"repo\": \"jgraph/drawio-desktop\",\n  \"url\": \"'https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-{VERSION}-windows-installer.exe https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-arm64-{VERSION}-windows-arm64-installer.exe https://github.com/jgraph/drawio-desktop/releases/download/v{VERSION}/draw.io-{VERSION}.msi'\"\n}"
       },
       "type": "n8n-nodes-base.github",
       "typeVersion": 1.1,
